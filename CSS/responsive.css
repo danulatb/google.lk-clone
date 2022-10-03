@@ -19,3 +19,10 @@
         padding: 10px;
     }
 }
+
+@media all and (max-width: 500px) {
+    footer {
+        position: relative;
+        padding-top: 70px;
+    }
+}
