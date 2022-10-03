@@ -1,4 +1,5 @@
 @import url(reset.css);
+@import url(responsive.css);
 
 
 body {
@@ -19,7 +20,7 @@ body {
     clear: both;
 }
 
-header a {
++a {
     display: block;
 }
 
@@ -121,111 +122,143 @@ header a {
 
 /* Main */
 
-#logo {
-    height: 290px;
+main{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sec-logo{
+    display: flex;
+    height: calc(100vh - 560px);
     align-items: flex-end;
+    min-height: 92px;
+    max-height: 290px;
 }
 
-
-#search-bar {
-    display: flex;
-    outline: none;
-    border: none;
-    min-width: 483px;
-    height: 34px;
-    font-size: 16px;
-    /* margin-top: -25px; */
-}
-
-#search-bar:focus-visible {
-    outline: none;
-}
-
-
-#search-icon {
-  
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 57px;
-    height: 100%;
+#ico-search {
     padding-right: 13px;
-    /* margin-top: -5px; */
-}
-
-#search-icon>svg {
+    width: 33px;
+    height: 44px;
     fill: #9aa0a6;
-   height: 20px;
-   width: 20px;
 }
 
-#voice-search-icon {
+#ico-mic{
+    width: 44px;
+    height: 44px;
+    padding: 0 8px;
+    cursor: pointer;
+}
 
+#search-form{
+    padding: 20px;
+    width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    width: 40px;
-    line-height: 14px;
-    height: 100%;
-    padding: 0px 8px;
 }
 
-#voice-search-icon>svg {
-    width: 24px;
-    height: 24px;
-    
-}
-
-#voice-search-icon> {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    
-}
-
-#search-container {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    padding: 0px 8px 0 14px;
-
-    width: auto;
+#form-input{
+    width: 100%;
     max-width: 584px;
-    min-height: 44px;
-    border-radius: 24px;
-    justify-content: space-around;
-
-    align-items: center;
+    width: 100%;
     border: 1px solid #dfe1e5;
-    /* overflow: hidden; */
-    /* justify-content: flex-start; */
-}
-
-#search {
+    border-radius: 24px;
+    margin-top: 6px;
+    padding: 0 8px 0 14px;
     display: flex;
-    justify-content: center;
-
 }
 
-#outer-container {
-    /* width: auto; */
-    /* max-width: 584px; */
+#form-input:hover, 
+#form-input:focus-within{
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: transparent;
+}
+
+#form-input input{
+    flex-grow: 1;
+    border: none;
+    outline: none;
+}
+
+#sec-buttons{
+    padding-top: 18px;
+}
+
+#sec-buttons button{
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    font-size: 14px;
+    color: #3c4043;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    min-width: 54px;
+    cursor: pointer;
+    user-select: none;
+    height: 36px;
+    border-radius: 4px;
+}
+
+#sec-buttons button:hover{
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+
+#sec-buttons button:focus{
+    border: 1px solid #4285f4;
+    outline: none;
+}
+
+#sec-lang{
+    margin-top: -8px;
+    font-size: 13px;
+    color: #4d5156;
+    line-height: 28px;
+}
+
+#sec-lang a{
+    padding: 0 3px;
+}
+
+/* Bottom */
+
+
+#country-row {
+    color: #70757a;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #dadce0;
+    height: 48px;
+    padding: 15px 30px;
+}
+
+#link-row {
+    background-color: #f2f2f2;
     display: flex;
-    flex: 1;
-    justify-content: center;
-    padding: 5px 8px 0 14px;
+    padding: 0px 20px;
+    justify-content: space-between;
 }
 
-#row-2 {
-    /* display: flex; */
-    padding: 25px 20px 20px 20px;
-    height: 170px;
-    /* justify-content: center; */
+#link-row a {
+    display: block;
+    padding: 15px;
+    white-space: nowrap;
+    text-decoration: none;
+    color: #70757a;
 }
 
-#search-container:hover {
-    background-color: #fff;
-    border-color: rgba(223,225,229,0);
-    box-shadow: 0 1px 6px rgb(32 33 36 / 28%)
+#link-row a:hover {
+    text-decoration: underline;
+}
+
+#left-side {
+    display: flex;
+
+}
+
+#right-side {
+    display: flex;
 }
