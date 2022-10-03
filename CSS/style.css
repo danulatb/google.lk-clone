@@ -231,6 +231,10 @@ footer {
     right: 0;
 }
 
+footer a {
+   font-size: 14px;
+}
+
 
 #country-row {
     color: #70757a;
