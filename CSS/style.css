@@ -1,5 +1,5 @@
 @import url(reset.css);
-@import url(responsive.css);
+
 
 
 body {
@@ -20,9 +20,7 @@ body {
     clear: both;
 }
 
-+a {
-    display: block;
-}
+
 
 #header-container {
     height: 60px;
@@ -226,6 +224,13 @@ main{
 
 /* Bottom */
 
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
 
 #country-row {
     color: #70757a;
@@ -240,6 +245,7 @@ main{
     display: flex;
     padding: 0px 20px;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 #link-row a {
@@ -256,6 +262,8 @@ main{
 
 #left-side {
     display: flex;
+    flex-wrap: wrap;
+    
 
 }
 

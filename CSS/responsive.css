@@ -3,3 +3,19 @@
         justify-content: center;
     }
 }
+
+@media all and (max-width: 1200px) {
+    #link-row {
+        justify-content: space-evenly;
+    }
+
+    #left-side {
+        justify-content: space-evenly;
+    }
+}
+
+@media all and (max-width: 360px) {
+    #search-form {
+        padding: 10px;
+    }
+}
