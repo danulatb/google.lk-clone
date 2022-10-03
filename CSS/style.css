@@ -1,0 +1,119 @@
+@import url(reset.css);
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+.clear-fiix::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+header a {
+    display: block;
+}
+
+#header-container {
+    height: 60px;
+    padding: 6px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#header-shortcuts {
+    width: 317px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#header-shortcuts {
+    width: 317px;
+    height: 100%;
+    display: flex;
+    padding-right: 15px;
+    justify-content: flex-end;
+}
+
+#header-shortcuts>a {
+    padding-left: 15px;
+    text-decoration: none;
+    color: rgba(0,0,0,.87);
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    
+}
+
+#header-shortcuts>a:hover {
+   text-decoration: underline;
+}
+
+
+
+#header-buttons {
+    display: flex;
+    align-items: center;
+}
+
+#settings>svg {
+    fill: #5f6368;
+    width: 24px;
+    height: 24px;
+
+}
+
+#settings {
+    margin-left: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    padding: 4px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+#settings:hover {
+    background-color: rgba(60,64,67,.08);
+   
+}
+
+#sign-in-button>a>div {
+    border-radius: 4px;
+    width: 96px;
+    height: 36px;
+    padding: 9px 23px;
+    margin: 0px 8px;
+    border: 1px solid transparent;
+    background-color: #1a73e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sign-in-button>a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 0px 4px;
+    width: inherit;
+    height: inherit;
+}
+
+
+#sign-in-button>a>div:hover {
+    background-color: #1b66c9;
+    box-shadow: 0 1px 3px 1px rgb(66 64 67 / 15%), 0 1px 2px 0 rgb(60 64 67 / 30%);
+}
