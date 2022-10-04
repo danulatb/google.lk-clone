@@ -1,0 +1,278 @@
+@import url(reset.css);
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#top-row {
+    
+    
+    width: 100%;
+    height: 69px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+#search-form {
+    display: flex;
+}
+
+#logo img {
+    width: 92px;
+    height: 30px;
+}
+
+#logo {
+    padding: 11px 50px 0px 30px;
+}
+
+
+#ico-close {
+    width: 48px;
+    height: 44px;
+    padding: 0px 12px;
+    fill: #70757a;
+    visibility: hidden;
+}
+
+#ico-voice-search {
+    width: 41px;
+    height: 44px;
+    padding: 0px 6px;
+}
+
+#search-icon {
+    width: 24px;
+    height: 24px;
+    fill: #4285f4;
+}
+
+#btn-search {
+    display: flex;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    padding-right: 13px;
+    border: none;
+    outline: none;
+    outline: none;
+    background-color: transparent;
+}
+
+#form-search input {
+    
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding-left: 20px;
+    z-index: 1;
+
+}
+
+#form-search:focus-within>#ico-close{
+    visibility: visible;
+}
+
+
+#form-search span {
+    display: block;
+    height: 65%;
+    border-left: 1px solid #dadce0;
+}
+
+#form-search {
+    /* margin-left: 33px; */
+    /* padding-left: 27px; */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    z-index: 3;
+    justify-content: flex-end;
+    height: 44px;
+    border:1px solid transparent;
+    width: 690px;
+    border-radius: 24px;
+    /* background-color: rebeccapurple; */
+    box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+}
+
+#container {
+    position: absolute;
+    display: flex;
+    align-content: center;
+    top: 25px;
+    left: 44px;
+}
+
+
+#settings {
+    margin-right: 33px;
+    padding-top: 28px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#sign-in-button>a>div {
+    border-radius: 4px;
+    width: 80px;
+    height: 36px;
+    padding: 9px 15px;
+    margin: 0px 8px;
+    border: 1px solid transparent;
+    background-color: #1a73e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sign-in-button>a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 0px 4px;
+    width: inherit;
+    height: inherit;
+}
+
+
+#sign-in-button>a>div:hover {
+    background-color: #1b66c9;
+    box-shadow: 0 1px 3px 1px rgb(66 64 67 / 15%), 0 1px 2px 0 rgb(60 64 67 / 30%);
+}
+
+.ico-settings {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    fill: #5f6368;
+}
+
+.btn-settings{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.btn-settings:hover{
+    background-color: rgba(218,220,224,.5);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    /* padding: 8px; */
+
+}
+
+
+#nav>li>svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    fill: #70757a;
+}
+
+#nav>li {
+    /* flex-grow: 1; */
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 44px;
+    padding: 17px 12px 11px 10px;
+}
+
+#nav {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 219px;
+    
+
+}
+
+#nav-container {
+    width: 882px;
+    height: 58px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    /* flex-wrap: nowrap; */
+    color: #70757a;
+    font-size: 14px;
+    font-family: Google Sans,arial,sans-serif;
+    /* border-bottom: 1px solid #70757a; */
+} 
+
+#nav-container>nav:nth-child(2)>span {
+    padding: 17px 12px 11px 10px;
+}
+
+#nav-container>nav {
+    display: flex;
+    align-items: flex-end;
+}
+
+header>div:nth-child(2) {
+    border-bottom: 1px solid #ebebeb;
+}
+
+main {
+    margin-left: 214px;
+    margin-right: 200px;
+}
+
+/* main >div {
+    border: 1px solid black;
+} */
+
+
+footer {
+    padding-top: 12px;
+    
+}
+
+#bot-row2,#bot-row1 {
+
+    padding-left: 214px;
+    align-items: center;
+    height: 40px;
+    display: flex;
+    background-color:#f2f2f2 ;
+    border-bottom: 1px solid #dadce0;
+}
+
+#bot-row2>nav {
+    
+    display: flex;
+   
+}
+
+#bot-row2>nav>li {
+    padding-left: 27px;
+    font-size: 14px;
+    color:#70757a; ;
+   
+}
+
+#bot-row2>nav>li>a {
+    text-decoration: none;
+    color: #70757a;
+   
+}
+#bot-row2>nav>li>a:hover {
+    color: #4d5156;
+   
+}
+
+
+
+
+
+
